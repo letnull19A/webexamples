@@ -1,0 +1,282 @@
+<!Doctype html>
+<html lang='ru'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', initial-scale='1.0'>
+    <title>Some title</title>
+        <link rel='stylesheet' type='text/css' href='./include/bootstrap/css/bootstrap.css'>
+        <link rel='stylesheet' type='text/css' href='./include/fontawesome/css/all.css'>
+        <link rel='stylesheet' type='text/css' href='./css/main.css'>
+        <script type='text/javascript' src='./include/jquery.js'></script>
+        <script type='text/javascript' src='./include/bootstrap/js/bootstrap.js'></script>
+        <script type='text/javascript' src='./js/script.js'></script>
+    </head>
+    <body>
+        <!--Header-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-lg">
+              <a class="navbar-brand" href="#">
+                  <img src="./images/Component 4image.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link nav__href-color dropdown-toggle" aria-current="page" href="#" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                О нас
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="customDropdown">
+                                <span class="dropdown-menu-arrow"></span>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__href-color dropdown-toggle" aria-current="page" href="#" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Наш сервис
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="customDropdown">
+                                <span class="dropdown-menu-arrow"></span>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__href-color dropdown-toggle" aria-current="page" href="#" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Цены
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="customDropdown">
+                                <span class="dropdown-menu-arrow"></span>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav__href-color dropdown-toggle" aria-current="page" href="#" id="customDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Контакты
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="customDropdown">
+                                <span class="dropdown-menu-arrow"></span>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                <a class="dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link nav__href-color dropdown-toggle' href='#'>
+                                <img src="./images/Vectoricon.png">
+                                +38 050 82-81 789
+                            </a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link nav__href-color dropdown-toggle' href='#'>
+                                Рус
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Main-->
+        <div class='container-lg pt-3'>
+            <nav aria-label="breadcrumb">
+                <ol class="d-flex">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+                </nav>
+                <p class="pt-3 main__title-p">Стоимость проживания за 2020</p>
+                <h3 class="pt-3 main__title-h3">Стоимость проживания за сутки (грн.) <br/> (для люксов и двухместных номеров стоимость указана за 2-х человек)</h3>
+                <h2 class="pt-4 main__title-h2 text-center">Главный корпус</h2>
+
+                <!--Tables-->
+
+                <table class="w-100" cellspacing="0">
+                    <tr>
+                        <th class="pb-3 ">Тариф</th>
+                        <th class="pb-3 ">Вариант питания</th>
+                        <th class="pb-3 " colspan="5">Период размещения</th>
+                    </tr>
+                    <tr class=" main__table-border ">
+                        <th rowspan="5" width="15%" class="text-wrap pt-5 pt-4 pl-2 ">
+                            <p class="text-grey pl-4">
+                            Одноместный 
+                            <br/>
+                            стандартный 
+                            <br/>
+                            номер
+                            </p>
+                            <p class="text-grey-s text-wrap pl-4">
+                            + 1 доп.место ЮГ <br/> (вид на море)
+                            </p>
+                        </th>
+                    </tr>
+                    <tr class="tb-border pl-2"><th></th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th></tr>
+                    <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Полный пансион</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                    <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Проживание с завтраком</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                    <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Номер проживание</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                </table>
+
+                <h2 class="pt-4 main__title-h2 text-center">Малый корпус</h2>
+
+                <table class="w-100 main__table-border" cellspacing="0">
+                    <tr class=" main__table-border">
+                        <th rowspan="5" width="15%" class="text-wrap pt-5 pt-4 pl-2">
+                            <p class="text-grey pl-4">
+                            Одноместный 
+                            <br/>
+                            стандартный 
+                            <br/>
+                            номер
+                            </p>
+                            <p class="text-grey-s text-wrap pl-4">
+                            + 1 доп.место ЮГ <br/> (вид на море)
+                            </p>
+                        </th>
+                    </tr>
+                    <tr class="tb-border pl-2"><th></th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th></tr>
+                    <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Полный пансион</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                    <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Проживание с завтраком</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                    <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Номер проживание</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                </table>
+
+                <div class="mt-5">
+                    <table class="w-100 main__table-border" cellspacing="0">
+                        <tr class=" main__table-border">
+                            <th rowspan="5" width="15%" class="text-wrap pt-5 pt-4 pl-2">
+                                <p class="text-grey pl-4">
+                                Одноместный 
+                                <br/>
+                                стандартный 
+                                <br/>
+                                номер
+                                </p>
+                                <p class="text-grey-s text-wrap pl-4">
+                                + 1 доп.место ЮГ <br/> (вид на море)
+                                </p>
+                            </th>
+                        </tr>
+                        <tr class="tb-border pl-2"><th></th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th></tr>
+                        <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Полный пансион</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                        <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Проживание с завтраком</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                        <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Номер проживание</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                    </table>
+                </div>
+
+                <div class="mt-5">
+                    <table class="w-100 main__table-border" cellspacing="0">
+                        <tr class=" main__table-border">
+                            <th rowspan="5" width="15%" class="text-wrap pt-5 pt-4 pl-2">
+                                <p class="text-grey pl-4">
+                                Одноместный 
+                                <br/>
+                                стандартный 
+                                <br/>
+                                номер
+                                </p>
+                                <p class="text-grey-s text-wrap pl-4">
+                                + 1 доп.место ЮГ <br/> (вид на море)
+                                </p>
+                            </th>
+                        </tr>
+                        <tr class="tb-border pl-2"><th></th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th><th class="text-blue-basic text-center">01.05 - 31.05</th><th class="tb-colored text-blue-basic text-center">01.05 - 31.05</th></tr>
+                        <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Полный пансион</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                        <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Проживание с завтраком</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                        <tr class="tb-border pl-2"><th class="text-grey-basic pl-4">Номер проживание</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th><th class="text-center">1200-1500 грн.</th><th class="tb-colored text-center">1200-1500 грн.</th></tr>
+                    </table>
+                </div>
+
+                <div class="w-100 mt-4 custom-bg">
+                    <div class="row container pt-4 pb-3">
+                        <div class="col-7 d-flex flex-row">
+                            <img src="./images/alert-circle (1) 1_icon.png" class="image-small">
+                            <p class="lead pl-2 text-normal">Во избежание недоразумений с оплатой за проживание просим Вас уточнять стоимость за несколько дней до приезда.
+                            Расценки на проживание могут быть откорректированы в ту или иную сторону, о чем будет сообщено на нашем сайте в разделе "Цены"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-7">
+                        <h3>Условия проживания и правила бронирования</h3>
+                        <ul class="pl-4">
+                            <li class="pt-2 pb-2">Отель «Мелиоратор ЮГ» работает для Вас 24 часа в сутки</li>
+                            <li class="pt-2 pb-2">За вещи, оставленные без присмотра в номере, ответственность несет гость.</li>
+                            <li class="pt-2 pb-2">Дополнительные бесплатные услуги отеля: вызов скорой помощи, вызов такси, услуга «будильник».</li>
+                            <li class="pt-2 pb-2">Оплата за проживание и дополнительные услуги производится в гривнах. Дети до 5 лет без дополнительного места, проживают бесплатно.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row my-3">
+                    <div class="col-10 d-flex flex-row">
+                        <img src="./images/Group 500_image_.png" class="image-normal ml-4">
+                        <ul class="ml-5">
+                            <li class="pl-2 pb-2">Отель «Мелиоратор ЮГ» работает для Вас 24 часа в сутки</li>
+                            <li class="pl-2 pb-2">За вещи, оставленные без присмотра в номере, ответственность несет гость.</li>
+                            <li class="pl-2 pb-2">Дополнительные бесплатные услуги отеля: вызов скорой помощи, вызов такси, услуга «будильник».</li>
+                            <li class="pl-2 pb-2">Оплата за проживание и дополнительные услуги производится в гривнах. Дети до 5 лет без дополнительного места, проживают бесплатно.</li>
+                            <li class="pl-2 pb-2 list-unstyled"><a href="#">Читать полностью</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!--Footer-->
+        <div class="footer__footer w-100 mt-4">
+            <footer class="footer__main container-lg">
+                <div class="row pt-5 pb-5 d-flex flex-column flex-lg-row">
+                    <div class="col-md-3 col-12">
+                        <img src="./images/Component 5_footer_.png">
+                        <ul class="list-unstyled text-white mt-3">
+                            <li>Украина</li>
+                            <li>Николаевская обл.,</li>
+                            <li>Березанский р-н., пос. Коблево,</li>
+                            <li>ул. Курортный проспект, 17.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                        <ul class="list-unstyled text-white">
+                            <li class="mt-2 mb-2">О компании</li>
+                            <li class="mt-2 mb-2">Отзывы клиентов</li>
+                            <li class="mt-2 mb-2">Галерея</li>
+                            <li class="mt-2 mb-2">Новости и акции</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 d-none d-md-block">
+                        <ul class="list-unstyled text-white">
+                            <li class="mt-2 mb-2">Номера</li>
+                            <li class="mt-2 mb-2">Услуги</li>
+                            <li class="mt-2 mb-2">Цены</li>
+                            <li class="mt-2 mb-2">Контакты</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <ul class="list-unstyled text-white">
+                            <li><img src="./images/phone_icon_phone.png" class="mr-4">+38 (096) 654-27-06</li>
+                            <li class="ml-5">+38 (05153) 9-73-72</li>
+                            <li class="ml-5">+38 (05153) 9-73-23</li>
+                            <li class="ml-5">+38 (050) 82-81-789</li>
+                            <li><img src="./images/mail 1_icon_mail.png" class="mr-4">info@meliorator.com.ua</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer__sociable">
+                <div class="row w-100 d-flex justify-content-md-end justify-content-start container-lg m-auto">
+                    <div class="col-md-3 col-7">
+                        <ul class="d-flex flex-row list-unstyled justify-content-between pt-3">
+                            <li><img src="./images/facebook_footer_.png" alt=""></li>
+                            <li><img src="./images/pinterest_footer_.png" alt=""></li>
+                            <li><img src="./images/instagram_footer_.png" alt=""></li>
+                            <li><img src="./images/youtube_footer_.png" alt=""></li>
+                            <li><img src="./images/telegram_footer_.png" alt=""></li>
+                            <li><img src="./images/odnoklasniki_footer_.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
