@@ -4,7 +4,7 @@
     outline: none;
 }
 
-html, body {
+html {
     height: 100%;
     width: 100%;
 }
@@ -13,7 +13,7 @@ body {
     background: url("../images/background.png");
 }
 
-.bg-blue {
+nav.bg-blue {
     height: 100px;
     background-color: #001e63 !important;
 }
