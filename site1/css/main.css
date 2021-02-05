@@ -13,7 +13,7 @@ body {
     background: url("../images/background.png");
 }
 
-.header {
+.bg-blue {
     height: 100px;
-    background-color: #001e63;
+    background-color: #001e63 !important;
 }
