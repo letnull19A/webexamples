@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    height: 100%;
     background-image: url("../images/background.png");
     background-position: 0 0;
     background-size: cover;
@@ -72,17 +73,23 @@ input.input-search::placeholder {
 }
   
 .head-wrap:before {
-    content: '';
-    width: 180%;
-    height: 8px;
-    background: #fff;
+    display: block;                  
+    width:1000px;                    
+    content: '';                      
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top:50%;                         
+    right: 110px;    
 }
 
 .head-wrap:after {
+    display: block;
+    width:1000px;
     content: '';
-    width: 20%;
-    height: 8px;
-    background: #fff;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top:50%;
+    left: 110px; 
 }
   
 .head-title h1 {
@@ -90,7 +97,7 @@ input.input-search::placeholder {
     display: inline;
     margin: 0;
     color: #fff;
-    width: 17em;
+    width: auto;
     padding: 0 1em;
     font-size: 45pt;
     font-variant: small-caps;
@@ -100,23 +107,30 @@ input.input-search::placeholder {
 }
 
 .head-wrap-full {
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
   
 .head-wrap-full:before {
-    content: '';
-    width: 100%;
-    height: 8px;
-    background: #fff;
+    display: block;                  
+    width:1000px;                    
+    content: '';                      
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top:50%;                         
+    right: 110px;  
 }
 
 .head-wrap-full:after {
+    display: block;
+    width:1000px;
     content: '';
-    width: 100%;
-    height: 8px;
-    background: #fff;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top:50%;
+    left: 110px; 
 }
 
 .article-text {
@@ -128,17 +142,23 @@ input.input-search::placeholder {
 }
 
 .head-wrap-un:after {
+    display: block;
+    width:1000px;
     content: '';
-    width: 180%;
-    height: 8px;
-    background: #fff;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top:50%;
+    left: 110px; 
 }
 
 .head-wrap-un:before {
-    content: '';
-    width: 20%;
-    height: 8px;
-    background: #fff;
+    display: block;                  
+    width:1000px;                    
+    content: '';                      
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    top:50%;                         
+    right: 110px;  
 }
 
 .h-custom {
