@@ -17,7 +17,8 @@ body {
     background-image: url("../images/background.png");
     background-position: 0 0;
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 nav.bg-blue {
@@ -31,7 +32,7 @@ nav.bg-blue {
 
 .block h1 {
     color: #fff;
-    font-size: 70pt;
+    font-size: 5rem;
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -94,7 +95,7 @@ input.input-search::placeholder {
     color: #fff;
     width: auto;
     padding: 0 1em;
-    font-size: 45pt;
+    font-size: 4rem;
     font-variant: small-caps;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
