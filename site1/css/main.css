@@ -7,17 +7,20 @@
 }
 
 html {
-    height: 100% !important;
+    /* height: 100% !important; */
     width: 100% !important;
 }
 
 body {
+    min-height: 100% !important;
     height: 100% !important;
     width: 100% !important;
     background-image: url("../images/background.png");
     background-position: 0 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -71,14 +74,13 @@ input.input-search::placeholder {
 .head-wrap, .head-wrap-un {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
 }
   
 .head-title h1 {
     /* position: relative; */
-    display: inline;
-    margin: 0;
+    /* display: inline; */
     color: #fff;
     padding: 0 1em;
     font-size: 4rem;
@@ -104,14 +106,14 @@ input.input-search::placeholder {
 
 .head-wrap-un:after {
     content: '';
-    width: 180%;
+    width: 70%;
     height: 8px;
     background: #fff;
 }
 
 .head-wrap-un:before {
     content: '';
-    width: 20%;
+    width: 10%;
     height: 8px;
     background: #fff;
 }
@@ -153,7 +155,7 @@ input.input-search::placeholder {
 
 .head-wrap:before {
     content: '';
-    width: 100%;
+    width: 40%;
     height: 8px;
     background: #fff;
 }
@@ -172,7 +174,7 @@ input.input-search::placeholder {
 @media (min-width: 768px) { 
     .head-wrap-full:before {
         content: '';
-        width: 70%;
+        width: 10%;
         height: 8px;
         background: #fff;
     }
@@ -185,13 +187,6 @@ input.input-search::placeholder {
     }
 
     .head-wrap:before {
-        content: '';
-        width: 100%;
-        height: 8px;
-        background: #fff;
-    }
-    
-    .head-wrap:after {
         content: '';
         width: 100%;
         height: 8px;
@@ -216,14 +211,7 @@ input.input-search::placeholder {
 
     .head-wrap:before {
         content: '';
-        width: 100%;
-        height: 8px;
-        background: #fff;
-    }
-    
-    .head-wrap:before {
-        content: '';
-        width: 50%;
+        width: 60%;
         height: 8px;
         background: #fff;
     }
