@@ -183,6 +183,11 @@ input.input-search::placeholder {
     transition: .5s;
 }
 
+li.burger-list-item {
+    line-height: 2.5em;
+    font-size: 2em;
+}
+
 /* Breakpoints */
 
 @media (max-width: 450px) {
