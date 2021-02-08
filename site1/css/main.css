@@ -185,6 +185,12 @@ input.input-search::placeholder {
 
 /* Breakpoints */
 
+@media (max-width: 450px) {
+    html {
+        width: 100vh;
+    }
+}
+
 @media (min-width: 576px) {
     nav.bg-blue {
         height: 70px;
