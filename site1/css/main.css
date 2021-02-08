@@ -179,13 +179,11 @@ input.input-search::placeholder {
     background: #fff;
 }
 
-/* Breakpoints */
-
-@media (max-width: 450px) {
-    body {
-        width: 100%;
-    }
+#enter, #exit {
+    transition: .5s;
 }
+
+/* Breakpoints */
 
 @media (min-width: 576px) { }
 
