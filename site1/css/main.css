@@ -192,7 +192,7 @@ li.burger-list-item {
 
 @media (max-width: 450px) {
     html {
-        /* width: 100vh; */
+        width: 100vh;
     }
 }
 
