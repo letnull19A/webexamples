@@ -185,7 +185,12 @@ input.input-search::placeholder {
 
 /* Breakpoints */
 
-@media (min-width: 576px) { }
+@media (min-width: 576px) {
+    nav.bg-blue {
+        height: 70px;
+        background-color: #001e63 !important;
+    }
+ }
 
 @media (min-width: 768px) { 
     .head-wrap-full:before {
