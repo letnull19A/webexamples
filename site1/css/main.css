@@ -90,6 +90,18 @@ input.input-search::placeholder {
     text-align: center;
 }
 
+.main {
+    margin-top: 112px;
+}
+
+.bg-burger {
+    background-color: rgba(55, 43, 219, 0.493);
+}
+
+.z-index-max {
+    z-index: 999;
+}
+
 .head-wrap-full {
     display: flex;
     align-items: center;

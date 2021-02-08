@@ -17,9 +17,24 @@
             <div class='container-md-lg container-fluid d-flex justify-content-between'>
                 <img src="./images/icon.png">
                 <img src="./images/logo.png">
-                <img src="./images/burger_icon.png">
+                <img src="./images/burger_icon.png" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
             </div>
         </nav>
+        <!--Fixed menu-burger-->
+        <div class="position-fixed z-index-max w-100 h-100 bg-burger" id="collapseExample">
+            <!--For columns-->
+            <div class='container-lg'>
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li class="burger-list-item"><a href="#">Some href</a></li>
+                            <li class="burger-list-item"><a href="#">Some href</a></li>
+                            <li class="burger-list-item"><a href="#">Some href</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Main-->
         <div class="main w-100">
             <div class='container-lg'>
@@ -56,7 +71,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-12">
-                            <img src="./images/image_call.png" class="d-block mx-md-0 mx-auto mt-md-0 mt-5">
+                            <img src="./images/image_call.png" class="d-block mx-md-0 mx-auto mt-md-0 mt-5 float-md-right">
                         </div>
                     </div>
                 </div>
@@ -71,7 +86,7 @@
             <div class='container-lg mt-5 h-100 mb-5 pt-5 pb-5'>
                 <div class="row h-100 d-flex align-md-items-center flex-column flex-md-row">
                     <div class="col-md-4 col-12 h-50">
-                        <img src="./images/image_call_0.png" class="float-md-right d-block mt-5 mt-md-0 mx-md-0 mx-auto">
+                        <img src="./images/image_call_0.png" class="float-md-left d-block mt-5 mt-md-0 mx-md-0 mx-auto">
                     </div>
                     <div class="col-md-8 col-12 h-50 d-flex flex-column d-flex flex-column">
                         <article class="article-text text-center float-right">
@@ -114,8 +129,8 @@
             <!--Block-->
             <div class='container-lg mt-5 h-100 mb-5 pt-5 pb-5'>
                 <div class="row h-100 d-flex align-md-items-center flex-column flex-md-row justify-content-between">
-                    <div class="col-md-4 col-12 h-50 d-flex flex-column">
-                        <img src="./images/image_call_2.png" class="float-md-right d-block mt-5 mt-md-0 mx-md-0 mx-auto">
+                    <div class="col-md-4 col-12 h-50">
+                        <img src="./images/image_call_2.png" class="float-md-left d-block mt-5 mt-md-0 mx-md-0 mx-auto">
                     </div>
                     <div class="col-md-8 col-12 h-50 d-flex flex-column">
                         <article class="article-text text-center float-right">
