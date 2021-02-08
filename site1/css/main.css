@@ -187,7 +187,7 @@ input.input-search::placeholder {
 
 @media (max-width: 450px) {
     html {
-        width: 100vh;
+        /* width: 100vh; */
     }
 }
 
