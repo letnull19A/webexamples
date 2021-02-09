@@ -29,6 +29,11 @@ nav.bg-blue {
     background-color: #001e63 !important;
 }
 
+.main-margin 
+{
+    margin-top: 112px;
+}
+
 .block {
     width: 100%;
 }
@@ -200,6 +205,10 @@ li.burger-list-item {
     nav.bg-blue {
         height: 70px;
         background-color: #001e63 !important;
+    }
+    .main-margin 
+    {
+        margin-top: 70px;
     }
  }
 
