@@ -203,12 +203,12 @@ li.burger-list-item {
 
 @media (min-width: 576px) {
     nav.bg-blue {
-        height: 70px;
+        height: 90px;
         background-color: #001e63 !important;
     }
     .main-margin 
     {
-        margin-top: 70px;
+        margin-top: 90px;
     }
  }
 
