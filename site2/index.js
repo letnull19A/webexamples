@@ -3,22 +3,15 @@
 let gulp = require("gulp"),
     sass = require("gulp-sass");
 
-let src = [
-    "./src/",
-    "./src/scss/",
-    "./src/js/",
-    "./src/images/"
-];
-
-let dist = [
-    "./dist/",
-    "./dist/css/",
-    "./dist/js/",
-    "./dist/images/"
-];
-
 sass.compiler = require("node-sass");
 
-gulp.task("build", () => {
-    return gulp.src()
+gulp.task("pug", () => {
+    return gulp.src("./src/**/*.pug", !"./src/**/_*.pug"])
 });
+
+gulp.task("scss", () => {
+    return gulp.src("./src/**/*.scss")
+        .pipe(sass().on("error", sass.logError)
+        .pipe(gulp.dest("./dist/css")));
+});
+
