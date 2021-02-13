@@ -11,5 +11,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/letnull19A/webexamples.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
   }
 }
