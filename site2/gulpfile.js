@@ -36,10 +36,10 @@ gulp.task("imagemin", () => {
 
 gulp.task("uglify", () => {
     return gulp.src("./src/js/**")
-        .pipe(uglify())
-        .pipe(gulp.dest("./dist/js"))
+        uglify()
+        gulp.dest("./dist/js")
 });
 
-gulp.task("init", ['include']);
-gulp.task("build", ['pug', 'scss', 'imagemin', 'uglify']);
+gulp.task("start", gulp.parallel(['include']))
+gulp.task("build", gulp.parallel(['pug', 'scss', 'imagemin', 'uglify']));
 
