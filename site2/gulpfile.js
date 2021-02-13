@@ -1,8 +1,10 @@
 'use strict';
 
-let gulp = require("gulp"),
+var gulp = require("gulp"),
     sass = require("gulp-sass"),
-    pug = require("gulp-pug");
+    pug = require("gulp-pug"),
+    imagemin = require("gulp-imagemin"),
+    uglify = require("gulp-uglify");
 
 sass.compiler = require("node-sass");
 
@@ -22,4 +24,22 @@ gulp.task("include", () => {
     return gulp.src("./src/include/**")
         .pipe(gulp.dest("./dist/include"))
 });
+
+gulp.task("imagemin", () => {
+    return gulp.src("./src/images/**")
+        .pipe(imagemin([
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.mozjpeg({quality: 75, progressive: true})
+        ]))
+        .pipe(gulp.dest("./dist/images"))
+});
+
+gulp.task("uglify", () => {
+    return gulp.src("./src/js/**")
+        .pipe(uglify())
+        .pipe(gulp.dest("./dist/js"))
+});
+
+gulp.task("init", ['include']);
+gulp.task("build", ['pug', 'scss', 'imagemin', 'uglify']);
 

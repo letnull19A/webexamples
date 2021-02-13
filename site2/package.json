@@ -16,8 +16,10 @@
   "devDependencies": {
     "express": "^4.17.1",
     "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
     "node-sass": "^5.0.0",
     "sass": "^1.32.7"
   }
