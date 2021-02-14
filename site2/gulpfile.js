@@ -41,5 +41,5 @@ gulp.task("uglify", () => {
 });
 
 gulp.task("start", gulp.parallel(['include']))
-gulp.task("build", gulp.parallel(['pug', 'scss', 'imagemin', 'uglify']));
+gulp.task("build", gulp.parallel(['pug', 'scss', 'imagemin', 'uglify']))
 
