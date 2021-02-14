@@ -1,10 +1,13 @@
-doctype html
-html
-    head
+<!Doctype html>
+<html lang="ru">
+    <head>
         <meta name='viewport' content='width=device-width', initial-scale='1.0'>
         meta(charset="utf-8")
         title Some title
-    body
+        include _including.pug
+    </head>
+    <body>
     div(class="main w-100 h-100")
         include _header.pug
         include _footer.pug
+    </body>
