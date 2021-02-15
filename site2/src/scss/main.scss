@@ -26,3 +26,11 @@ html
 {
     background-color: #fff !important;
 }
+
+a.nav-hover 
+{
+    &:hover
+    {
+        color: #00A9AB; 
+    } 
+}
