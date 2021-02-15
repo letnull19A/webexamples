@@ -3,7 +3,8 @@
 $width: 100%;
 $height: 100%;
 
-* {
+* 
+{
     padding: 0;
     margin: 0;
     outline: none;
@@ -14,9 +15,14 @@ html
     height: $height;
     width: $width;
 
-    body {
+    body 
+    {
         height: $height;
         width: $width;
     }
 }
 
+.navbar-white 
+{
+    background-color: #fff !important;
+}
