@@ -1,0 +1,31 @@
+mixin rate
+    span(class="fa fa-star checked")
+    span(class="fa fa-star checked")
+    span(class="fa fa-star checked")
+    span(class="fa fa-star checked")
+    span(class="fa fa-star checked")
+
+mixin review(img, name, text)
+    div(class="user-review")
+        img(class="user-image" src="./images/" + img)
+        span(class="user-name") #{name}
+        article(class="user-review-text") #{text}
+        div(class="float-left")
+            +rate
+        div(class="float-right")
+            a Подробнее
+
+div(class="container-lg")
+    div(class="row")
+        h3 Отзывы наших клиентов
+        div(class="w-100")
+            div(class="float-left")
+                p Мнение клиентов для нас на первом месте
+            div(class="float-right")
+                a(href="#") Мнение клиентов для нас на первом месте
+        div(class="w-100")
+            div(class="d-flex flex-column")
+                - for (var j = 0; j < 2; j++)
+                    div(class="w-100 d-flex flex-row justify-content-between")
+                        - for (var i = 0; i < 3; i++)
+                            +review("users (0).jpg", "Линар Ахматгалин", "Быстро, качественно, чисто, недорого.Буду рекомендовать!Остались довольны!")

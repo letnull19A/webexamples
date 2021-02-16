@@ -1,9 +1,65 @@
-.w-100 
-{
-    width: 100% !important;
+.splide {
+    width: 100%;
+    height: 100%;
+
+    img {
+        height: 100vh;
+        min-width: 100%;
+    }
 }
 
-.h-100
-{
-    height: 100% !important;
+.card-width {
+    width: 10rem;
+}
+
+.card-width-middle {
+    width: 18rem;
+}
+
+.block-shadow {
+    box-shadow: 0px 6px 26px 0px #0000004d;
+}
+
+img.img-custom {
+    width: 32%
+}
+
+.background {
+    background-image: url("./../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+}
+
+.user-review {
+    width: 20rem;
+    margin: 1em 0 1em 0;
+
+    img.user-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+    }
+
+    .user-name {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        margin-left: 15px;
+    }
+
+    article.user-review-text {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 35px;
+        color: #282828;
+        margin-top: 15px;
+    }
+
+    span.fa-star {
+        color: #EBBD3D;
+    }
 }

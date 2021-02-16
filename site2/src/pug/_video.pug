@@ -1,0 +1,11 @@
+div(class="container-lg mt-4")
+    div(class="row")
+        h3 Видео наших работ
+        div(class="w-100")
+            div(class="float-left")
+                h5 Для удобства, мы подробно снимаем процесс нашей работы  
+            div(class="float-right")
+                a(href="#") Посмотреть больше
+        div(class="d-flex flex-wrap justify-content-between")
+            - for (i = 1; i <= 6; i++)
+                img(class="img-custom mt-2 mb-2" src="./images/video (" + i + ").jpg")

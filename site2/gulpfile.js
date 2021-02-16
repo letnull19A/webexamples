@@ -36,8 +36,8 @@ gulp.task("imagemin", () => {
 
 gulp.task("uglify", () => {
     return gulp.src("./src/js/**")
-        uglify()
-        gulp.dest("./dist/js")
+        .pipe(uglify())
+        .pipe(gulp.dest("./dist/js"))
 });
 
 gulp.task("start", gulp.parallel(['include']))

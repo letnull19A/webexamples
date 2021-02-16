@@ -1,0 +1,1 @@
+$(()=>{new Splide("#imageSlider",{type:"loop",perPage:1,autoHeight:!0}).mount()});
