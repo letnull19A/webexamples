@@ -40,6 +40,14 @@ gulp.task("uglify", () => {
         .pipe(gulp.dest("./dist/js"))
 });
 
+gulp.task("build-auto", () => {
+    gulp.watch(["./src/scss/*.scss", "!./src/scss/_*.scss"], gulp.series("scss"));
+    gulp.watch("./src/js/**", gulp.series("uglify"));
+    gulp.watch("./src/images/**", gulp.series("imagemin"));
+    gulp.watch("./src/include/**", gulp.series("include"));
+    gulp.watch(["./src/pug/*.pug", "!./src/pug/_*.pug"], gulp.series("pug"));
+});
+
 gulp.task("start", gulp.parallel(['include']))
 gulp.task("build", gulp.parallel(['pug', 'scss', 'imagemin', 'uglify']))
 

@@ -1,27 +1,16 @@
-div(clas="container-lg")
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Accordion Item #1</button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-            </div>
-        </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Accordion Item #2</button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Accordion Item #3</button>
-        </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
-        </div>
-    </div>
+mixin accordion(title, consist, num)
+    div(class="card")
+        div(class="card-header" id="heading" + num)
+            h2(class="mb-0")
+                button(class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse" + num aria-expanded="false" aria-controls="collapse" + num) #{title}
+    div(id="collapse" + num class="collapse show" aria-labelledby="heading" + num data-parent=".accordion")
+        div(class="card-body") #{consist}
+
+div(class="container-lg mt-4 mb-4")
+    div(class="accordion w-100")
+        +accordion("Сколько времени займет установка натяжного потолка?", "Содержание", "One")
+        +accordion("Сколько времени займет установка натяжного потолка?", "Содержание", "Two")
+        +accordion("Сколько времени займет установка натяжного потолка?", "Содержание", "Three")
+        article(class="w-75 mr-2") Желательно монтировать натяжной потолок в момент, <br/> когда в помещении завершен черновой этап отделки, <br/> стены готовы к наклейке обоев.
+        p На все дополнительные вопросы <br/> мы ответим вам в самое ближайшее время, <br/>напишите нам!
+        button Задать вопрос!
