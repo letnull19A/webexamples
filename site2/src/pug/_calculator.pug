@@ -1,11 +1,41 @@
 div(class="container-lg mt-3")
     h3 Калькулятор стоимости
-    article Вы можете рассчитать примерную стоимость вашего потолка. Для более точного расчета закажите бесплатный замер, чтобы мы учли все особенности вашего помещения
-    h4 Площадь помещения, где нужны потолки  (м²)
+    article(class="article-color-blue") Вы можете рассчитать примерную стоимость вашего потолка. <br/> Для более точного расчета закажите бесплатный замер, чтобы мы учли все особенности вашего помещения
+    h4(class="mt-4") Площадь помещения, где нужны потолки  (м²)
     div(class="col-9")
         div(class="d-flex flex-column")
-            input(type="range")
-            button Получить расчёт
+            form(method="POST")
+                span(class="counter" id="counter") 10
+                input(type="range" min="1" max="200" value="10" class="w-100")
+                div(class="indicators")
+                    div(class="float-left") 1
+                    div(class="float-right") 200
+                div(class="row mt-3")
+                    div(class="col-6")
+                        label(class="label-title mt-3") Выберите фактуру потолка
+                        div(class="blocken mt-2 mb-2")
+                            select(class="js-example-basic-single" name="state" style="width: 100%")
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                        label(class="label-title mt-3") Установка люстры
+                        div(class="blocken mt-2 mb-2 w-100 d-flex justify-content-between align-items-center")
+                            div(class="d-block")
+                                input(type="radio" id="check-yes" value="yes" checked)
+                                label(for="check-yes") Да
+                            div(class="d-block")
+                                input(type="radio" id="check-no" value="no")
+                                label(for="check-no") Нет
+                    div(class="col-6")
+                        label(class="label-title mt-3") Количество светильников
+                        div(class="blocken mt-2 mb-2 d-flex justify-content-center align-items-center")
+                            div(class="w-25")
+                                button -
+                                span 1
+                                button +
+                        label(class="label-title mt-3") Ваш телефон
+                        div(class="blocken mt-2 mb-2")
+                            <input id="phone" name="phone" type="tel">
+                button(class="spec-button button-blue w-50 mt-3") Получить расчёт
 
 div(class="block-shadow w-100 mt-3 mb-3")
     div(class="container-lg pt-3 pb-3")
