@@ -1,13 +1,13 @@
-mixin card 
+mixin card(img, text)
     div(class="card card-width")
-        img(class="card-img-top" src="...")
+        img(class="card-img-top" src="./images/" + img)
         div(class="card-body")
-            h5(class="card-title") Card title
-            p(class="card-text") Some quick example text to build on the card title and make up the bulk of the card's content.
-            a(href="#" class="btn btn-primary") Go somewhere
+            p(class="card-text")= text
 
-div(class="container-lg")
+div(class="container-lg mt-4 mb-4")
     h3 Действующие акции
     div(class="row w-100 d-flex flex-row justify-content-between")
-        - for (var i = 0; i < 4; i++)
-            +card
+        +card("card__image(0).jpg", "Каждый клиент получает скидкупо акции на покупкуи установку натяжного потолка MSD classic 30 м²")
+        +card("card__image(1).jpg", "Предоставляем услуги по поклейке обоев любого типаи формата")
+        +card("card__image(2).jpg", "Скидка 10%для новосёлови пенсионеров! Получите скидкуна бесшовное сертифицированное полотно из Германии,а также на выполненные работы")
+        +card("card__image(3).jpg", "Заключи договор сейчас и получи подарок или дополнительную скидку!")

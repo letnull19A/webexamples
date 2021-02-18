@@ -1,19 +1,16 @@
-mixin cards 
+mixin cards(title, icon, text)
     div(class="card mt-4 mb-4" style="width: 18rem;")
                 div(class="card-body")
-                    h5(class="card-title") Card title
-                    h6(class="card-subtitle mb-2 text-muted") Card subtitle
-                    p(class="card-text") Some quick example text to build on the card title and make up the bulk of the card's content.
-                    a(href="#" class="card-link") Card link
-                    a(href="#" class="card-link") Another link
+                    h5(class="card-title") <img src="./images/" + icon> title
+                    p(class="card-text")= text
 
 
 div(class="container-lg")
     div(class="float-left")
         h2 Наши преимущества
-        p Мы работаем с новейшим противопожарным материалом производства Германии
+        p(style="color: #00418B;") Мы работаем с новейшим противопожарным материалом производства Германии
     div(class="float-right")
-        h2 Не хватает денег? <br/> Сделаем рассрочку!
+        h2(style="color: #00418B;") Не хватает денег? <br/> Сделаем рассрочку!
 
 div(class="container-lg")
     div(class="row w-100 d-flex justify-content-between")

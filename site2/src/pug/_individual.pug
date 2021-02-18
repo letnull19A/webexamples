@@ -1,14 +1,12 @@
-mixin cardMiddle
+mixin cardMiddle(img, title, text)
     div(class="card card-width-middle mt-4 mb-4")
-        img(class="card-img-top" src="")
+        img(class="card-img-top" src="./images/" + img)
         div(class="card-body")
-            h5(class="card-title") Card title
-            p(class="card-text") Some quick example text to build on the card title and make up the bulk of the card's content.
-            a(href="#" class="btn btn-primary") Go somewhere
+            h5(class="card-title")= text
 
 div(class="container-lg")
     h2 Индивидуальные проекты
     div(class="row w-100 d-flex flex-row justify-content-between")
-        - for (var i = 0; i < 9; ++i)
-            +cardMiddle
+        each image in ["__image_cards (1).png", "__image_cards (2).png", "__image_cards (3).png"]
+            +cardMiddle(image, "Глянцевый", "- Визуально расширяет пространство \n - Создает зеркальный эффект \n - Идеален для небольших помещений")
             
