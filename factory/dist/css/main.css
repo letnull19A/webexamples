@@ -1,0 +1,230 @@
+.h-100 {
+  height: 100vh; }
+
+.h-75 {
+  height: 75vh; }
+
+.h-50 {
+  height: 50vh; }
+
+.w-auto {
+  width: 60%; }
+
+.margin-header {
+  margin-top: 123px; }
+
+.align-center {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center; }
+
+.row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: row; }
+
+.column {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column; }
+
+.w-50 {
+  width: 50%; }
+
+.h-auto {
+  height: 100%; }
+
+button.button {
+  border: 1px solid #FF6224;
+  padding: 10px 10px 10px 10px;
+  font-family: sans-serif; }
+
+.right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0; }
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.margin-left {
+  margin-left: 10px; }
+
+header.header {
+  width: 100%;
+  height: 123px;
+  background-color: #ffffff;
+  position: fixed;
+  margin-top: -123px; }
+  header.header .nav {
+    height: 123px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  header.header .logo {
+    width: 75px;
+    height: 65px;
+    background: url(./../images/Group.svg); }
+  header.header ul.inline-menu {
+    width: 70%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header.header ul.inline-menu li {
+      display: inline; }
+      header.header ul.inline-menu li a {
+        color: #17494D;
+        font-family: sans-serif;
+        text-decoration: none; }
+      header.header ul.inline-menu li button.button {
+        background-color: #17494D;
+        color: #fff;
+        border: 1px solid #17494D; }
+
+section.section-block {
+  width: 100%; }
+  section.section-block .block {
+    width: 100%;
+    height: 100%; }
+  section.section-block .dark-green {
+    background-color: #17494D; }
+  section.section-block .padding {
+    display: block;
+    padding: 30px 0 30px 0; }
+  section.section-block span.h1 {
+    font-size: 3.5em;
+    font-family: sans-serif; }
+    section.section-block span.h1 .underline {
+      border-bottom: 2px solid #fff; }
+  section.section-block .block-article .row {
+    margin-top: 25px; }
+  section.section-block .block-article article.article {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    width: 80%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; }
+  section.section-block .block-article button.button {
+    border: 1px solid #FF6224;
+    padding: 10px 10px 10px 10px;
+    font-family: sans-serif; }
+  section.section-block .block-article button.normal {
+    background-color: #FF6224;
+    color: #fff; }
+  section.section-block .block-article button.used {
+    background-color: rgba(0, 0, 0, 0);
+    color: #FF6224; }
+  section.section-block .light-yellow {
+    background-color: #FED6A8; }
+    section.section-block .light-yellow .text-article h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: #03363D;
+      font-size: 31px; }
+    section.section-block .light-yellow article.article {
+      width: 80%;
+      margin-top: 30px;
+      color: #17494D;
+      font-family: "Roboto", sans-serif;
+      line-height: 25px;
+      font-size: 16px; }
+    section.section-block .light-yellow a.black-href {
+      text-decoration: none;
+      color: #03363D;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      padding: 0px 10px 10px 10px;
+      border-bottom: 2px solid #03363D; }
+    section.section-block .light-yellow .hrefs {
+      margin-top: 40px;
+      width: 40%;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: space-between; }
+  section.section-block .title-center, section.section-block .pre-title-center {
+    text-align: center;
+    color: #03363D; }
+  section.section-block .title-center {
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: bold; }
+  section.section-block .pre-title-center {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px; }
+  section.section-block .tabs {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto; }
+    section.section-block .tabs li {
+      display: inline; }
+    section.section-block .tabs a.tab-item {
+      text-decoration: none;
+      color: #68737D;
+      font-family: "Roboto", sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      font-variant: small-caps;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+      padding: 10px 5px 10px 5px;
+      margin-left: 10px;
+      margin-right: 10px; }
+    section.section-block .tabs a.active {
+      color: #03363D;
+      border-color: #03363D; }
+  section.section-block article.lead-article {
+    width: 55%; }
+  section.section-block .article-text, section.section-block article.lead-article {
+    color: #17494D;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 18px; }
+  section.section-block .vertical-line {
+    width: 55%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    padding-left: 40px;
+    border-left: 3px solid #68737D; }
+  section.section-block a.upperline {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #03363D;
+    text-decoration: none;
+    color: #03363D;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400; }
+  section.section-block .margin-y {
+    display: block;
+    margin: 30px 0 30px 0; }

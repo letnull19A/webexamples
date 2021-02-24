@@ -1,0 +1,323 @@
+$main-font-color: #03363D;
+$font-color-1: #17494D;
+$font-color-2: #68737D;
+
+$backgrpund-1: #D6EEF2;
+$background-2: #17494D;
+$background-3: #FF6224;
+$background-4: #FED6A8;
+
+$alpha: rgba(0, 0, 0, 0);
+
+$header-height: 123px;
+
+// === MAIN ===
+
+@mixin d-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.h-100 {
+    height: 100vh;
+}
+
+.h-75 {
+    height: 75vh;
+}
+
+.h-50 {
+    height: 50vh;
+}
+
+.w-auto {
+    width: 60%;
+}
+
+.margin-header {
+    margin-top: $header-height;
+}
+
+.align-center {
+    @include d-flex;
+    align-items: center;
+}
+
+.row {
+    @include d-flex;
+    flex-direction: row;
+}
+
+.column {
+    @include d-flex;
+    flex-direction: column;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.h-auto {
+    height: 100%;
+}
+
+button.button {
+    border: 1px solid $background-3;
+    padding: 10px 10px 10px 10px;
+    font-family: sans-serif;
+}
+
+.right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+// === END MAIN ===
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.margin-left {
+    margin-left: 10px;
+}
+
+// === HEADER ===
+
+header.header {
+    width: 100%;
+    height: $header-height;
+    background-color: #ffffff;
+    position: fixed;
+    margin-top: -$header-height;
+    
+    .nav {
+        height: $header-height;
+        @include d-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 75px;
+        height: 65px;
+        background: url(./../images/Group.svg);
+    }
+    
+    ul.inline-menu {
+        width: 70%;
+        @include d-flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        li {
+            display: inline;
+            
+            a {
+                color: $font-color-1;
+                font-family: sans-serif;
+                text-decoration: none;
+            }
+            
+            button.button {
+                background-color: $background-2;
+                color: #fff;
+                border: 1px solid $background-2;
+            }
+            
+        }
+    }
+    
+}
+
+// === END HEADER ===
+// ==================
+// ==================
+// === SECTIONS ===
+
+section.section-block {
+    width: 100%;
+    
+    .block {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .dark-green {
+        background-color: $background-2;
+    }
+    
+    .padding {
+        display: block;
+        padding: 30px 0 30px 0;
+    }
+    
+    span.h1 {
+        font-size: 3.5em;
+        font-family: sans-serif;
+        
+        .underline {
+            border-bottom: 2px solid #fff;
+        }
+    }
+    
+    .block-article {
+        
+        .row {
+            margin-top: 25px;
+        }
+        
+        article.article {
+            color: #fff;
+            font-family: Roboto, sans-serif;
+            width: 80%;
+            @include d-flex;
+        }
+        
+        button.button {
+            border: 1px solid $background-3;
+            padding: 10px 10px 10px 10px;
+            font-family: sans-serif;
+        }
+        
+        button.normal {
+            background-color: $background-3;
+            color: #fff;
+        }
+        
+        button.used {
+            background-color: $alpha;
+            color: $background-3;
+        }
+        
+    }
+    
+    .light-yellow {
+        background-color: $background-4;
+        
+        .text-article {
+            h2 {
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                color: $main-font-color;
+                font-size: 31px;
+            }
+        }
+        
+        article.article {
+            width: 80%;
+            margin-top: 30px;
+            color: $font-color-1;
+            font-family: "Roboto", sans-serif;
+            line-height: 25px;
+            font-size: 16px;
+        }
+        
+        a.black-href {
+            text-decoration: none;
+            color: $main-font-color;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            padding: 0px 10px 10px 10px;
+            border-bottom: 2px solid $main-font-color;
+        }
+        
+        .hrefs {
+            margin-top: 40px;
+            width: 40%;
+            @include d-flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .title-center, .pre-title-center {
+        text-align: center;
+        color: $main-font-color;
+    }
+    
+    .title-center {
+        font-family: "Roboto", sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+    }
+    
+    .pre-title-center {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .tabs {
+        @include d-flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+        
+        li {
+            display: inline;
+        }
+        
+        a.tab-item {
+            text-decoration: none;
+            color: $font-color-2;
+            font-family: "Roboto", sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            font-variant: small-caps;
+            border-bottom: 2px solid $alpha;
+            padding: 10px 5px 10px 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        a.active {
+            color: $main-font-color;
+            border-color: $main-font-color;
+        }
+    }
+    
+    article.lead-article {
+        width: 55%;
+    }
+    
+    .article-text, article.lead-article {
+        color: $background-2;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .vertical-line {
+        width: 55%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        padding-left: 40px;
+        border-left: 3px solid $font-color-2;
+    }
+    
+    a.upperline {
+        padding-bottom: 5px;
+        border-bottom: 3px solid $main-font-color;
+        text-decoration: none;
+        color: $main-font-color;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+    }
+    
+    .margin-y {
+        display: block;
+        margin: 30px 0 30px 0;
+    }
+    
+}
+
+// === END SECTIONS ===
