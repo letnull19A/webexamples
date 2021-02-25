@@ -21,16 +21,20 @@ $header-height: 123px;
     display: flex;
 }
 
+@mixin border($size, $color) {
+    border-bottom: $size solid $color;
+}
+
 .h-100 {
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .h-75 {
-    height: 75vh;
+    max-height: 75vh;
 }
 
 .h-50 {
-    height: 50vh;
+    max-height: 50vh;
 }
 
 .w-auto {
@@ -286,13 +290,53 @@ section.section-block {
     
     article.lead-article {
         width: 55%;
+        line-height: 25px;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    h2.header-lead {
+        color: $background-2;
+        font-family: "Roboto", sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .flex-wrap {
+        @include d-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+        padding-bottom: 40px;
+
+        .component {
+            width: 120px;
+            height: 60px;
+        }
+
+    }
+
+    h3 {
+        color: $background-2;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
     }
     
+    .article-text {
+        line-height: 25px;
+    }
+
+    .article-text.margin-top {
+        margin-top: 20px;
+    }
+
     .article-text, article.lead-article {
         color: $background-2;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
-        line-height: 18px;
+        font-weight: 300;
     }
     
     .vertical-line {
@@ -301,7 +345,8 @@ section.section-block {
         margin-bottom: 30px;
         margin-left: 40px;
         padding-left: 40px;
-        border-left: 3px solid $font-color-2;
+        border-left: 3px solid #C2C8CC;
+        padding: 0 15px 0 15px;
     }
     
     a.upperline {
@@ -317,7 +362,195 @@ section.section-block {
         display: block;
         margin: 30px 0 30px 0;
     }
+
+    .backgrounder {
+        display: block;
+        background-image: url(./../images/Rectangle.png);
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .box {
+            width: 40%;
+            height: fit-content;
+            background-color: #fff;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+
+            .box-inner {
+                padding: 40px;
+
+                h3 {
+                    margin: 0 !important;
+                    color: $main-font-color;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 38px;
+                    font-weight: 600;
+                }
+
+                .article {
+                    margin-top: 20px;
+                    color: $font-color-1;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+
+                .navigation {
+                    margin-top: 20px;
+                }
+            }
+
+        }
+    }
+
+    .flex-cards {
+        @include d-flex();
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+
+        .card-item {
+            background-color: #F8F9F9;
+            width: 350px;
+            height: 350px;
+
+            &.border-3 {
+                @include border(4px, #7D3D54);
+            }
+
+            &.border-1 {
+                @include border(4px, #3D8DAE);
+            }
+
+            &.border-2 {
+                @include border(4px, #C38F00);
+            }
+
+            .card-item-inner {
+                @include d-flex();
+                flex-direction: column;
+                height: 90%;
+                padding: 30px;
+
+                p, h5 {
+                    color: $main-font-color;
+                }
+
+                article {
+                    color: $background-2;
+                }
+
+                p, h5, article {
+                    font-family: "Roboto", sans-serif;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                h5 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    margin: 0;
+                    height: 60px;
+                }
+            }
+
+            article {
+                margin-bottom: 20px;
+                flex: 1 0 auto;
+                line-height: 25px;
+            }
+
+            .low {
+                flex: 0 0 auto;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .colored {
+        padding: 40px 0 40px 0;
+        background-color: #D6EEF2;
+        width: 100%;
+        margin-top: 60px;
+
+        h2 {
+            color: $main-font-color;
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    hr.colored-hr {
+        color: #C2C8CC;
+    }
+
+    .flex-row {
+        @include d-flex();
+        flex-direction: row;
+        justify-content: space-between;
+
+        .mini-block {
+            h1 {
+                color: $main-font-color;
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                font-size: 32px;
+            }
+
+            ul {
+                li {
+                    list-style: none;
+                    color: $main-font-color;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    @include border(2px, $main-font-color);
+                    line-height: 25px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
     
+    .center-block {
+        @include d-flex();
+        justify-content: space-around;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .background-green {
+        background-color: #17494D;
+        color: #fff;
+        border: 1px solid #17494D;
+    }
+
+    .border-green {
+        background-color: $alpha;
+        color: #17494D;
+        border: 1px solid #17494D;
+    }
+
+    footer.footer {
+        
+        .footer-inner {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+
 }
 
 // === END SECTIONS ===
