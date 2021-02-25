@@ -542,15 +542,124 @@ section.section-block {
         color: #17494D;
         border: 1px solid #17494D;
     }
+}
 
-    footer.footer {
-        
-        .footer-inner {
-            width: 100%;
-            margin-top: 30px;
+// === END SECTIONS ===
+
+// === FOOTER ===
+
+footer.footer {
+    height: fit-content;
+
+    .footer-inner {
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    .footer-content {
+        @include d-flex();
+        flex-direction: row;
+        justify-content: space-between;
+
+        h3.foot__title {
+            color: $main-font-color;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-size: 25px;
         }
+
+        ul {
+            li {
+
+                list-style: none;
+                color: #68737D;
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                line-height: 25px;
+
+                p {
+                    color: $main-font-color;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: bold;
+                    font-variant: small-caps;
+                }
+            }
+        }
+
+    }
+
+    .footer-foot {
+        border-top: 1px solid #68737D;
+
+        .hrefs {
+            margin-top: 50px;
+
+            a {
+                padding-right: 30px;
+            }
+
+        }
+
+        article.more-text {
+            margin-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .searcher-block {
+            @include d-flex();
+            align-items: flex-start;
+            height: 45px;
+            margin-top: 20px;
+        
+            article {
+                h4 {
+                    margin: 0;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 23px;
+                    color: $main-font-color;
+                }
+                p {
+                    margin: 10px 0 0 0;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 16px;
+                    color: $main-font-color;
+                }
+            }
+
+            .searcher {
+                height: 100%;
+                margin-left: 20px;
+                width: 50%;
+
+                input.foot__inlut {
+                    width: 60%;
+
+                    &::placeholder {
+                        color: #68737D;
+                        font-family: "Roboto", sans-serif;
+                        padding-left: 40px;
+                    }
+
+                }
+                
+                input.foot__inlut, input.foot__button {
+                    border-radius: 0px;
+                    border: 2px solid $font-color-1;
+                }
+
+                input.foot__button {
+                    background-color: $main-font-color;
+                    color: #fff;
+                    font-family: "Roboto", sans-serif;
+                    border: 1px solid $font-color-1;
+                }
+
+            }
+
+        }
+
     }
 
 }
 
-// === END SECTIONS ===
+// === END FOOTER ===
