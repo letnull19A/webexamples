@@ -73,3 +73,5 @@ var app7 = new Vue({
     }
 });
 
+//  app7.list.push({id: 4, text: "New item!"});
+
