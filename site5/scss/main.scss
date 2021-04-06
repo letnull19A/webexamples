@@ -1,0 +1,61 @@
+@import '_instance';
+@import '_grid.scss';
+@import '_flex';
+@import '_colors';
+@import '_background';
+@import '_container';
+@import '_fonts';
+@import '_media';
+
+header.header {
+    height: 100px;
+    text-transform: uppercase;
+
+    span.header__title {
+        @include font-lato-bold;
+        padding-left: 10px;
+    }
+
+    .menu {
+        width: 50%;
+        min-width: 300px;
+
+
+        ul {
+
+            width: 100%;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    i.menu-burger {
+        color: $color-white;
+        font-size: 25px;
+    }
+
+}
+
+button.button {
+    padding: 2px 15px 2px 15px;
+    background-color: $color-alpha;
+    border: none;
+    text-transform: uppercase;
+    color: $color-white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        padding: 5px 10px 5px 10px;
+    }
+
+    &.button-uncolored {
+        border: 2px solid $color-white;
+        border-radius: 6px;
+    }
+
+}
+

@@ -1,0 +1,14 @@
+@mixin backgoundInstance($image) {
+    background-image: url($image);
+}
+
+.background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.background-0 {
+        @include backgoundInstance("./../images/Bg.png");
+    }
+
+}

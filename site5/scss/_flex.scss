@@ -1,0 +1,33 @@
+.d-flex {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+}
+.row {
+    flex-direction: row;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.column {
+    flex-direction: column;
+}
+.coumn-reverse {
+    flex-direction: column-reverse;
+}
+.justify-start {
+    justify-content: start;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: end;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}

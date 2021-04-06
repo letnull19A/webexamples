@@ -1,46 +1,14 @@
 <!Doctype html>
 <html lang='lv'>
     <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width', initial-scale='1.0'>
-    <title>Vue js</title>
-    <link rel='stylesheet' type='text/css' href='./css/main.css'>
-    <script src='https://cdn.jsdelivr.net/npm/vue@2.6.12'></script>
-    <script type='text/javascript' src='./js/script.js' async></script>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width', initial-scale='1.0'>
+        <title>Vue.js application</title>
+        <link rel='stylesheet' type='text/css' href='./css/main.css'>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script type='text/javascript' src='./js/script.js' async></script>
     </head>
     <body>
-        <div id="app">
-            {{ message }}
-        </div>
-        <div id="app-2">
-            <span v-bind:title="message">
-                Hover me!
-            </span>
-        </div>
-        <div id="app-3">
-            <span v-if="seen">
-                Text is visible!
-            </span>
-        </div>
-        <div id="app-4">
-            <ol>
-                <li v-for="todo in todos">
-                    {{ todo.text }}
-                </li>
-            </ol>
-        </div>
-        <div id="app-5">
-            <p>{{ message }}</p>
-            <button v-on:click="clickMethod">Click me!</button>
-        </div>
-        <div id="app-6">
-            <p>{{ message }}</p>
-            <input type="text" v-model="message">
-        </div>
-        <div id="app-7">
-            <ol>
-                <todo-item v-for="item in list" v-bind:todo="item" v-bind:key="item.id"></todo-item>
-            </ol>
-        </div>
+        
     </body>
 </html>
