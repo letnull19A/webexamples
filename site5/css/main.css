@@ -172,6 +172,7 @@ header.header .menu ul li {
 header.header i.menu-burger {
   color: #FFFFFF;
   font-size: 25px;
+  width: 30px;
 }
 
 button.button {

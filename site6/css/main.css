@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #5c5c5c; }
+
+header.header {
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  z-index: 999; }
+
+.container {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto; }
+
+section.section {
+  width: 100%; }
+  section.section.background-1 {
+    background-image: url("./../images/image-5.png"); }

@@ -1,48 +1,63 @@
-@import "_instance.scss";
-
-* {
-    padding: 0;
-    margin: 0;
-    outline: none;
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    background-color: #5c5c5c;
-}
+@import '_instance';
+@import '_grid.scss';
+@import '_flex';
+@import '_colors';
+@import '_background';
+@import '_container';
+@import '_fonts';
+@import '_media';
+@import '_menu';
 
 header.header {
-    width: 100%;
-    height: 90px;
-    background-color: $color-alpha;
-    position: fixed;
-    z-index: 999;
-}
+    height: 100px;
+    text-transform: uppercase;
 
-.container {
-    max-width: 1200px;
-    display: block;
-    margin: 0 auto;
-}
+    span.header__title {
+        @include font-lato-bold;
+        padding-left: 10px;
+    }
 
-section.section {
-    width: 100%;
+    .menu {
+        width: 50%;
+        min-width: 300px;
 
-    &.background-1 {
-        background-image: url("./../images/image-5.png");
+
+        ul {
+
+            width: 100%;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    i.menu-burger {
+        color: $color-white;
+        font-size: 25px;
+        width: 30px;
     }
 
 }
 
 button.button {
+    padding: 2px 15px 2px 15px;
+    background-color: $color-alpha;
+    border: none;
+    text-transform: uppercase;
+    color: $color-white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        padding: 5px 10px 5px 10px;
+    }
+
+    &.button-uncolored {
+        border: 2px solid $color-white;
+        border-radius: 6px;
+    }
 
 }
 
-.to-line {
-    
-}

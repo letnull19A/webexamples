@@ -1,50 +1,16 @@
-$color-0: #FA6648;
-$color-1: #FFBD12;
-$color-2: #FFB0BC;
-$color-3: #1BDBC4;
-$color-4: #962EFF;
-$color-alpha: rgba(0, 0, 0, 0);
-
-$margin-1: 30px;
-$margin-2: 170px;
-
-@mixin font-marker {
-    font-family: 'Permanent Marker', cursive;
+* 
+{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
-@mixin font-montserrant-regular {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
+html { height: 100%; width: 100%; }
+body { height: 100%; width: 100%; }
 
-@mixin font-montserrant-medium {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-@mixin font-montserrant-semi-bold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-@mixin font-montserrant-bold {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-}
-
-@mixin font-montserrant-black {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-}
-
-@mixin d-flex {
-    display: flex;
-}
-
-@mixin flex-row {
-    flex-direction: row;
-}
-
-@mixin flex-column {
-    flex-direction: column;
+p, a, span, h1, h2, h3, h4, h5, h6 
+{
+    font-family: sans-serif;
+    color: #fff;
 }
