@@ -2,6 +2,16 @@
     .container {
         width: 90%;
     }
+
+    section.section {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section.section {
+        font-size: 32px;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -11,6 +21,10 @@
 
     .mobile-menu {
         display: none;
+    }
+
+    section.section {
+        font-size: 72px;
     }
 }
 

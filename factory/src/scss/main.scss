@@ -41,9 +41,10 @@ header.header {
 }
 
 button.button {
-    padding: 2px 15px 2px 15px;
+    padding: 5px 17px 5px 17px;
     background-color: $color-alpha;
     border: none;
+    height: 34px;
     text-transform: uppercase;
     color: $color-white;
     display: flex;
@@ -59,5 +60,77 @@ button.button {
         border-radius: 6px;
     }
 
+    &.button-white {
+        background-color: $color-white;
+        border: 2px solid $color-white;
+        border-radius: 6px;
+        color: $color-pink;
+    }
+
 }
+
+article.article-block {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    h1.h1-title {
+        text-transform: uppercase;
+        font-family: Lato;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 86px;
+        letter-spacing: 0.05em;
+        text-align: left;
+    }
+    
+    p.p-article {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: Lato;
+        font-size: 0.45em;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.6em;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+.black-theme {
+
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: justified;
+
+    h1, h2 {
+        color: #000;
+        font-family: Lato;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 43px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    padding: 50px 0 50px 0;
+}
+
+.video-player {
+    img.play-button {
+        position: relative;
+        left: 30px;
+    }
+}
+
 
