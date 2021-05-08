@@ -1,0 +1,21 @@
+<!Doctype html>
+html(lang="de")
+    include _head.pug
+    <body id="scroll">
+    header(class="position-fixed w-100 header")
+        div(class="container h-100-auto")
+            div(class="d-flex align-items-center justify-between h-100-auto")
+                div(class="d-flex justify-start")
+                    img(src="./images/logo-0.svg", alt="logotype")
+                    <span class="header__title">CloudBudget</span>
+                div(class="menu d-flex justify-center")
+                    ul(class="list d-flex flex-row justify-between")
+                        each value in ["overview", "features", "technology", "contact", "sign up"]
+                            li(class="list-item")
+                                a(href="#")= value
+                div(class="d-flex justify-end")
+                    <button class="button d-inline"><img src="./images/emojione-flag-for-flag-united-states.svg"><span>en</span><img src="./images/Frame 2.svg"></button>
+                    <button class="button button-uncolored">login</button>
+                div(class="d-medium-block d-flex justify-end")
+                    <i id="menu" class="d-medium-block menu-burger fas fa-bars"></i>
+    include _menu.pug
