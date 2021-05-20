@@ -22,28 +22,27 @@ task('serve', () => {
     startPath: "index.html"
   });
 
-  AutoCompile();
+  watch([SRC0[2], "./src/scss/_*.scss"], parallel('scss'));
+  watch([SRC0[4], "./src/sass/_*.sass"], parallel('sass'));
+  watch([SRC0[0], './src/pug/mixins/_*.pug'], parallel('pug'));
+  watch([SRC0[6]], series('ts'));
+  watch([DEST[2], DEST[0], DEST[1], DEST[3]]).on("change", browserSync.reload);
   
 });
 
-/*
- *  DEFAULT functions
- */
-
-function AutoCompile()
-{
+task("watch", () => {
   watch([SRC0[2], "./src/scss/_*.scss"], parallel('scss'));
-  watch([SRC0[0], './src/pug/includes/_*.pug'], parallel('pug'));
+  watch([SRC0[4], "./src/sass/_*.sass"], parallel('sass'));
+  watch([SRC0[0], './src/pug/mixins/_*.pug'], parallel('pug'));
   watch([SRC0[6]], series('ts'));
-  watch([DEST[2], DEST[0], DEST[1]]).on("change", browserSync.reload);
-}
+});
 
 /*
  *  DEFAULT tasks
  */
 
 task('project::init', () => {
-  return src('./.temp/*').pipe(dest('./src'));
+  return src('./.temp/**').pipe(dest('./src'));
 });
 
 task('project::clear', () => {
@@ -53,7 +52,13 @@ task('project::clear', () => {
 task('scss', () => {
   return src([SRC0[2], SRC0[3]])
     .pipe(sass())
-    .pipe(dest('./dist/css'));
+    .pipe(dest(DEST[1]));
+});
+
+task('sass', () => {
+  return src(SRC0[4], SRC0[5])
+    .pipe(sass())
+    .pipe(dest(DEST[1]))
 });
 
 task('pug', () => {
@@ -71,6 +76,16 @@ task('ts', () => {
 /*
  *  WATCH namespace 
  */
+
+task('image::min', () => { console.log('image min'); });
+
+task('image::moveTo', () => {
+  // watch();
+});
+
+task('sass::watch', () => {
+  watch([SRC0[4], SRC0[5]], parallel('scss'));
+})
 
 task('scss::watch', () => {
   watch([SRC0[2], SRC0[3]], parallel('scss'));
@@ -94,7 +109,10 @@ const SRC0 = [
   SRCD + "!scss/_*.scss",        // 3 !SCSS
   SRCD + "sass/*.sass",          // 4 SASS
   SRCD + "!sass/_*.sass",        // 5 !SASS
-  SRCD + "typescript/*.ts"       // 6 TYPESCRIPT
+  SRCD + "typescript/*.ts",      // 6 TYPESCRIPT
+  SRCD + "images/*.png",         // 7 IMAGE ( PNG )
+  SRCD + "images/*.jpg",         // 8 IMAGE ( JPG )
+  SRCD + "images/*.webp"         // 9 IMAGE ( WEBP )
 ];
 const DEST = [
   DSTD + "",                     // 0 HTML

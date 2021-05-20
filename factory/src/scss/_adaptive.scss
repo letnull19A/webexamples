@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px) {
+    .navigation {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .item-max, .item-min {
+        a.link {
+        font-size: 11pt;
+        }
+    }
+
+    .preview-card {
+
+        cursor: pointer;
+    
+        span.preview__float-text {
+            position: relative;
+            left: 3%;
+            opacity: 0;
+            top: 45px;
+            font-size: 18pt;
+            font-style: normal;
+            font-weight: 600;
+            font-family: 'Geometria';
+            text-transform: uppercase;
+            color: $color_white;
+            -webkit-transition: left .5s, opacity .3s;
+            transition: left .5s, opacity .3s;
+        }
+    
+        &:hover {
+            span.preview__float-text {
+                left: 5%;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .layout-1 {
+        ul.header__list {
+            display: none;
+        }
+    }
+}

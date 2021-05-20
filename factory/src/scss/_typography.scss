@@ -1,0 +1,144 @@
+@font-face {
+  // thin
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-thin-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-thin-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  // regular
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  // reg italic
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-italic-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  // medium
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-medium-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  // bold
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-bold-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-bold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  // extra-bold
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-extablack-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-extablack-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  // extra-bold italic
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-extrablackitalic-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-extrablackitalic-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  // heavy
+  font-family: 'Geometria';
+  src: url('/fonts/geometria-heavy-webfont.woff2') format('woff2'),
+       url('/fonts/geometria-heavy-webfont.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+html{
+  color: #272727;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// reference for font-weigths
+// 300 - thin
+// 400 - reg
+// 500 - med
+// 600 - bold
+// 700 - extra-bold (with italic style too)
+// 800 - heavy
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+// h1,h2,h3,h4,h5,h6{}
+h1{
+  /* заголовок в топе */
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+h2{
+  /* headlines in project categories */
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.53px;
+  line-height: 25px;
+}
+h3{
+  /* headlines in projects */
+  /* Salym Petroleum pano: */
+  font-weight: 600;
+  font-size: 55px;
+  letter-spacing: 5.5px;
+  line-height: 65px;
+}
+h4{
+  /* суть проекта: */
+  font-weight: 800;
+  font-size: 25px;
+  color: #FFFFFF;
+  letter-spacing: 5.5px;
+  line-height: 30px;
+}
+h5{
+  /* команда, контакты */
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: 2.6px;
+  line-height: 39px;
+  color: #272727;
+}
+p{
+  font-size: 13px;
+  letter-spacing: 0.53px;
+  line-height: 25px;
+  margin-bottom: 1em;
+}
+// footer stuff, deeper label
+.ui-block{
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1em;
+  @media (max-width: 904px){
+    font-size: 11px;
+    letter-spacing: 2.4px;
+  }
+}
+.ticker__set span[aria-hidden]{
+  display: inline-block;
+}

@@ -1,0 +1,31 @@
+mixin listItem(text)
+    li(class="list-item")
+        a(class="link" href="#")= text
+
+header(class="header fixed")
+    div(class="container align-middle h-100 w-100 d-flex flex-row")
+        div(class="header__logo")
+            img(src="./images/logo.webp", alt="logo", class="header__logo align-middle")
+        div(class="header__menuList")
+            div(class="verticalLine")
+            div(class="layout-0" id="layout-0")
+                ul(class="header__list")
+                    li(class="list-item") Проекты
+            div(class="layout-1" id="layout-1")
+                ul(class="header__list")
+                    -var arr = ["проекты", "графические", "реклама", "reels", "корпоративные"]
+                    each val in arr
+                        +listItem(val)
+        div(class="header__menuButton")
+            div(class="menu-btn" id="open-menu")
+                div(class="menu-btn-holder btn-open")
+                    svg(width="21px" height="30px" id="menu_mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.00586 36")
+                        rect(id="menu_mini1" width="21.00586" height="2.5" style="fill:#2b2b2b")
+                        rect(id="menu_mini2" y="15.98096" width="21.00586" height="2.5" style="fill:#2b2b2b")
+                        rect(id="menu_mini3" y="32.03564" width="21.00586" height="2.5" style="fill:#2b2b2b")
+            div(class="menu-btn" id="close-menu")
+                div(class="menu-btn-holder btn-close")
+                    svg(xmlns="http://www.w3.org/2000/svg" width="24" height="36" viewBox="0 0 21.00586 36")
+                        g(fill="black" fill-rule="evenodd" stroke="#FFF" stroke-width="2.5")
+                            path(d="M1.25 37.33l20.8-36.2")
+                            path(d="M22.05 37.33L1.25 1.13")
