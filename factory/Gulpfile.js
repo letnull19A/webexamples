@@ -1,10 +1,10 @@
 'use strict';
 
 const { src, dest, watch, task, parallel, series } = require('gulp'),
-                                              sass = require('gulp-sass'),
-                                        browserSync = require('browser-sync'),
-                                                pug = require('gulp-pug'),
-                                        typescript = require('gulp-typescript');
+  sass = require('gulp-sass')(require('sass')),
+  browserSync = require('browser-sync'),
+  pug = require('gulp-pug'),
+  typescript = require('gulp-typescript');
 
 browserSync.create();
 sass.compiler = require('node-sass');
@@ -24,7 +24,7 @@ task('serve', () => {
 
   watch([SRC0[2], "./src/scss/_*.scss"], parallel('scss'));
   watch([SRC0[4], "./src/sass/_*.sass"], parallel('sass'));
-  watch([SRC0[0], './src/pug/mixins/_*.pug'], parallel('pug'));
+  watch([SRC0[0], './src/pug/includes/_*.pug'], parallel('pug'));
   watch([SRC0[6]], series('ts'));
   watch([DEST[2], DEST[0], DEST[1], DEST[3]]).on("change", browserSync.reload);
   
@@ -33,7 +33,7 @@ task('serve', () => {
 task("watch", () => {
   watch([SRC0[2], "./src/scss/_*.scss"], parallel('scss'));
   watch([SRC0[4], "./src/sass/_*.sass"], parallel('sass'));
-  watch([SRC0[0], './src/pug/mixins/_*.pug'], parallel('pug'));
+  watch([SRC0[0], './src/pug/includes/_*.pug'], parallel('pug'));
   watch([SRC0[6]], series('ts'));
 });
 

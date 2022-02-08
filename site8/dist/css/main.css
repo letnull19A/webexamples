@@ -1,0 +1,405 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-thin-webfont.woff2") format("woff2"), url("/fonts/geometria-thin-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-webfont.woff2") format("woff2"), url("/fonts/geometria-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-italic-webfont.woff2") format("woff2"), url("/fonts/geometria-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-medium-webfont.woff2") format("woff2"), url("/fonts/geometria-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-bold-webfont.woff2") format("woff2"), url("/fonts/geometria-bold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-extablack-webfont.woff2") format("woff2"), url("/fonts/geometria-extablack-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-extrablackitalic-webfont.woff2") format("woff2"), url("/fonts/geometria-extrablackitalic-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("/fonts/geometria-heavy-webfont.woff2") format("woff2"), url("/fonts/geometria-heavy-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+html {
+  color: #272727;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+h1 {
+  /* заголовок в топе */
+  font-weight: 700;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 4px; }
+
+h2 {
+  /* headlines in project categories */
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 0.53px;
+  line-height: 25px; }
+
+h3 {
+  /* headlines in projects */
+  /* Salym Petroleum pano: */
+  font-weight: 600;
+  font-size: 55px;
+  letter-spacing: 5.5px;
+  line-height: 65px; }
+
+h4 {
+  /* суть проекта: */
+  font-weight: 800;
+  font-size: 25px;
+  color: #FFFFFF;
+  letter-spacing: 5.5px;
+  line-height: 30px; }
+
+h5 {
+  /* команда, контакты */
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: 2.6px;
+  line-height: 39px;
+  color: #272727; }
+
+p {
+  font-size: 13px;
+  letter-spacing: 0.53px;
+  line-height: 25px;
+  margin-bottom: 1em; }
+
+.ui-block {
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1em; }
+  @media (max-width: 904px) {
+    .ui-block {
+      font-size: 11px;
+      letter-spacing: 2.4px; } }
+
+.ticker__set span[aria-hidden] {
+  display: inline-block; }
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box; }
+
+html, body, main {
+  height: 100%;
+  width: 100%; }
+
+.verticalLine {
+  position: absolute;
+  border-left: 3px solid #000;
+  height: 20px;
+  top: 0;
+  right: calc(50% - 4px); }
+
+.header {
+  position: fixed;
+  z-index: 997;
+  width: 100%;
+  top: 0;
+  height: 57px;
+  background-color: #ffffff;
+  font-family: 'Geometria';
+  font-weight: 600;
+  font-size: 8pt; }
+  .header .menu-btn .btn-close path {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out; }
+  .header .header__logo {
+    width: 15%; }
+  .header .header__menuList {
+    width: 70%; }
+  .header .header__menuButton {
+    width: 15%; }
+    .header .header__menuButton * {
+      position: relative;
+      right: 0; }
+  .header .layout-0, .header .layout-1 {
+    width: 100%;
+    text-transform: uppercase;
+    position: relative; }
+  .header .layout-0 {
+    z-index: 0;
+    top: 9px; }
+  .header .layout-1 {
+    z-index: 1;
+    top: -5px; }
+  .header img.header__logo {
+    width: 86px;
+    height: 26px;
+    justify-content: flex-start;
+    position: relative;
+    left: -10px; }
+  .header ul.header__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; }
+    .header ul.header__list li.list-item {
+      text-transform: unset; }
+  .header .menu-btn {
+    height: 36px; }
+    .header .menu-btn svg {
+      position: fixed;
+      right: 10px;
+      z-index: 999;
+      transition: transform .2s;
+      cursor: pointer; }
+      .header .menu-btn svg:hover {
+        transform: rotateX(45deg); }
+
+.align-middle {
+  display: flex;
+  align-items: center; }
+
+.w-100 {
+  width: 100%; }
+
+.d-flex {
+  display: flex; }
+
+.h-100 {
+  height: 100%; }
+
+main {
+  margin-top: 120px; }
+
+.flex-row {
+  flex-direction: row; }
+
+.flex-column {
+  flex-direction: column; }
+
+.styled {
+  opacity: 0.5; }
+
+.container {
+  width: 95%;
+  margin: 0 auto; }
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 270px;
+  margin: 0 auto; }
+  .navigation .grid {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr;
+    grid-template-rows: 5fr; }
+    .navigation .grid .item-max {
+      text-align: center;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+.item-max a.link, .item-min a.link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #787878;
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Geometria';
+  text-transform: uppercase;
+  transition: .2s color; }
+  .item-max a.link:hover, .item-min a.link:hover {
+    color: black; }
+
+.preview-card {
+  cursor: pointer; }
+  .preview-card span.preview__float-text {
+    position: relative;
+    left: 3%;
+    opacity: 0;
+    top: 45px;
+    font-size: 18pt;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Geometria';
+    text-transform: uppercase;
+    color: white;
+    -webkit-transition: left .5s, opacity .3s;
+    transition: left .5s, opacity .3s; }
+  .preview-card:hover span.preview__float-text {
+    left: 5%;
+    opacity: 1; }
+
+.size-large, .size-middle, .size-half, .size-mini {
+  height: auto; }
+
+.size-large {
+  width: 100%; }
+  .size-large canvas.preview__image-canvas {
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 450px; }
+
+.size-middle {
+  width: calc(76% - 5px); }
+  .size-middle canvas.preview__image-canvas {
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 420px; }
+
+.size-half {
+  width: calc(50% - 5px); }
+  .size-half canvas.preview__image-canvas {
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 193px; }
+
+.size-mini {
+  width: calc(24% - 5px); }
+  .size-mini canvas.preview__image-canvas {
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 150px; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+.fixed-block {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .fixed-block .container-fixed {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .fixed-block ul.menuElement {
+    height: 40vh;
+    list-style: none;
+    text-align: center; }
+    .fixed-block ul.menuElement li.list-item {
+      color: white;
+      font-size: 18pt;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 35px;
+      font-family: 'Geometria';
+      text-transform: uppercase;
+      line-height: 50px;
+      letter-spacing: 5px; }
+
+.fixed-block .container {
+  margin-top: 250px; }
+
+.fixed-block .media-holder.video-holder:last-of-type {
+  margin-top: 0; }
+
+.fixed-block .media-holder.video-holder {
+  margin-bottom: 40px;
+  width: 954px;
+  height: 537px; }
+
+.fixed-block .media-holder {
+  position: relative; }
+
+.fixed-block h3 + .media-holder.video-holder.main-holder:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 154px;
+  background: url("http://zheeshee.ru/img/project_top_lines.svg") bottom no-repeat;
+  background-size: 100% 100%; }
+
+.fixed-block .st0projectplayhand {
+  fill: #FFFFFF; }
+
+@media screen and (max-width: 900px) {
+  .navigation {
+    width: 80%; } }
+
+@media screen and (max-width: 850px) {
+  .item-max a.link, .item-min a.link {
+    font-size: 11pt; }
+  .preview-card {
+    cursor: pointer; }
+    .preview-card span.preview__float-text {
+      position: relative;
+      left: 3%;
+      opacity: 0;
+      top: 45px;
+      font-size: 18pt;
+      font-style: normal;
+      font-weight: 600;
+      font-family: 'Geometria';
+      text-transform: uppercase;
+      color: white;
+      -webkit-transition: left .5s, opacity .3s;
+      transition: left .5s, opacity .3s; }
+    .preview-card:hover span.preview__float-text {
+      left: 5%;
+      opacity: 1; } }
+
+@media screen and (max-width: 750px) {
+  .layout-1 ul.header__list {
+    display: none; } }
