@@ -1,0 +1,51 @@
+@import '_variables.scss';
+@import '_containers.scss';
+@import '_header.scss';
+@import './mixins/_flex.scss';
+
+* {
+   padding: 0;
+   margin: 0;
+   outline: none;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+}
+
+.section {
+   width: 100%;
+   height: auto;
+   min-height: 120px;
+}
+
+.section-background {
+   height: 100vh;
+   width: 100%;
+   background-image: url('./../images/Bg.png');
+   background-position: 0 0;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   .section__content  {
+      height: 100vh;
+   }
+
+}
+
+.section__content {
+   width: 100%;
+   @include align-vertical-center();
+   @include justify-content-center();
+}
+
+.section__content__central-block {
+   height: 340px;
+   width: 50%;
+   @include flex-column();
+}

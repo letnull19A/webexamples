@@ -1,0 +1,816 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+html, body{
+	height: 100%;
+	width: 100%;	
+}
+
+.header {
+	background-color: #202021;
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	z-index: 999;
+	margin-top: 0;
+	top: 0;
+}
+
+.header-inside {
+	height: 45px;
+}
+
+a.title {
+	font-family: 'Play', sans-serif;
+	color: #fff;
+	font-size: 33px;
+	text-decoration: none;
+	letter-spacing: 5px;
+	float: left;
+}
+
+.margin {
+	margin-top: 20px;
+}
+
+a.hrefs {
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 700;
+	margin-left: 3%;
+	margin-top: 12px;
+}
+
+.block-right {
+	margin-left: auto;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.lang {
+	display: flex;
+	flex-direction: row;
+	height: 30px;
+}
+
+.ico-lang {
+	margin-top: 12px;
+}
+
+.header i.fas {
+	color: #fff;
+	margin-left: 20px;
+	margin-top: 12px;
+	position: relative;
+	z-index: 997;
+}
+
+button.btn {
+	margin-left: 1%;
+	height: 30px;
+	color: #fff;
+	background-color: #ff6613;
+	font-family: 'Varela Round', sans-serif;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 50px;
+	border: 2px solid #ff6613;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 6px;
+	transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-webkit-transition: .2s;
+}
+
+button.btn:hover {
+	background-color: #ffff;
+	color: #ff6613;
+}
+
+a.soc {
+	width: 250px;
+	color: #a9bfca;
+	text-decoration: none;
+	font-family: 'Varela Round', sans-serif;
+	margin-top: 12px;
+	margin-left: 2%;
+}
+
+.container {
+	margin-left: 6%;
+	width: 88%;
+	margin: 0 auto;
+}
+
+.control {
+	position: relative;
+	z-index: 3;
+}
+
+.header-inside {
+	display: flex;
+	flex-direction: row;
+}
+
+.containeras {
+	width: 100%;
+	height: 100%;
+}
+
+.main-img {
+	width: 100%;
+	margin-top: 45px;
+}
+
+.must-registration {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	height: auto;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.card-image {
+	width: 294px;
+	height: 170px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+article.text-a {
+	font-family: 'Special Elite', cursive;
+	color: #3d3d3d;
+	font-size: 37px;
+	width: 50%;
+	text-align: right;
+}
+
+.buttons {
+	display: block;
+	width: 50%;
+}
+
+.list-media {
+	border-bottom: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
+}
+
+.footer {
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+
+button.btns {
+	display: block;
+	margin: 0 auto;
+	color: #ffff;
+	border: 2px solid #03a528;
+	background-color: #03a528;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 55px;
+	padding-right: 55px;
+	border-radius: 50px;
+	font-size: 20px;
+	font-family: sans-serif;
+	margin-top: 50px;
+	transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-webkit-transition: .2s;
+}
+
+button.btns:hover {
+	cursor: pointer;
+	color: #03a528;
+	background-color: #fff;
+	transition: .2s;
+	-moz-transition: .2s;
+	-o-transition: .2s;
+	-webkit-transition: .2s;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.discription-d {
+	width: 100%;
+	height: auto;
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.discription-d a {
+	color: #0083c3;
+}
+
+.discription-d p {
+	color: #8b979e;
+	font-family: sans-serif;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.podmenu {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+	height: 50px;
+	padding-top: 10px;
+	margin: auto;
+	color: #3d3d3d;
+	cursor: pointer;
+}
+
+.podmenu:hover {
+	color: #0083c3;
+}
+
+.list .podmenu .icon {
+	text-align: center;
+}
+
+.icon i.fas {
+	text-align: center;
+}
+
+p.dsk {
+	text-align: center;
+	font-family: sans-serif;
+	margin-top: 10px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+.cards .card {
+	margin-right: auto;
+	width: 294px;
+	height: 170px;
+}
+
+.games-block .card {
+	width: 100%;
+	height: auto;
+}
+
+.games-block .layer {
+	width: 350px;
+	height: 200px;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	background-color: rgba(255, 255, 255, 0.58);
+}
+
+.games-block .images {
+	width: 350px;
+	height: 200px;
+}
+
+.layer {
+	width: 294px;
+	height: 170px;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	background-color: rgba(255, 255, 255, 0.58);
+}
+
+.layer-block {
+	border-top: 3px solid black;
+	margin-top: 100px;
+	width: 350px;
+	height: 100px;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.58);
+}
+
+.layer:hover {
+	opacity: 1;
+}
+
+.layer button {
+	background-color: #03a528;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	border: 2px solid #03a528;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 20px;
+	border-radius: 50px;
+	margin-left: 27%;
+	margin-top: 100px;
+}
+
+.layer button:hover {
+	background-color: #fff;
+	color: #03a528;
+}
+
+.images {
+	width: 294px;
+	height: 170px;
+}
+
+.layer {
+	width: 294px;
+	height: 170px;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(255, 255, 255, 0.58);
+}
+
+.images-floater img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+h1.title-2 {
+	margin-top: 30px;
+	color: #0083c3;
+	font-family: 'Special Elite', cursive;
+	text-align: center;
+}
+
+p.kapital {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 65px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.list-media {
+    font-size: 0;
+    margin: 0 0 0 -35px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+.table-cont {
+	width: 100%;
+	font-family: sans-serif;
+}
+
+.td {
+	border-top: 1px solid black;
+}
+
+.name {
+	padding-left: 10px;
+}
+
+.table-cont .td {
+	background-color: green;
+}
+
+.align-right {
+	text-align: right;
+	width: 220px;
+	color: green;
+}
+
+.align-left {
+	text-align: left;
+	width: 20px;
+}
+
+.list-media__item {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 35px;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.list-media__item::before {
+    content: "";
+    display: inline-block;
+    height: 82px;
+    vertical-align: middle;
+}
+
+.payment-systems.icon-payment-1 {
+    background-position: -414px -237px;
+    height: 18px;
+    width: 57px;
+}
+
+.title-td {
+	color: grey;
+}
+
+.payment-systems.icon-payment-mastercard {
+    background-position: -348px -112px;
+    height: 33px;
+    width: 56px;
+}
+
+.fixed-hide {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(110, 110, 110, 0.2);
+}
+
+.menu {
+	height: 100%;
+	width: 300px;
+	background-color: #202021;
+	float: right;
+	z-index: 999;
+}
+
+.menu ul {
+	margin-top: 70px;
+	padding-left: 40px;
+}
+
+.menu li {
+	list-style: none;
+}
+
+.menu a {
+	color: #fff;
+	font-size: 16px;
+	font-family: sans-serif;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.payment-systems {
+    background-image: url("sprite-payment-systems.png");
+}
+
+.flash-player-game {
+	width: 70%;
+	height: 563px;
+	margin: 0 auto;
+	background-color: #fff;
+	position: relative;
+	top: 70px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+.list-gmg {
+	height: 80%;
+}
+
+.game {
+	width: 70%;
+	height: 100%;
+}
+
+.game .windowGame {
+	width: 100%;
+	height: 100%;
+	background-color: lightgrey;
+	border: 1px solid #fff;
+}
+
+ul.list-in {
+	margin-top: 2px;
+	width: 30%;
+	height: 90%;
+}
+
+
+
+.listic {
+	height: 80%;
+} 
+
+li.blockList {
+	list-style: none;
+	margin-left: 2px;
+	width: 300px;
+	height: 170px;
+	background-color: lightgrey;
+	margin-bottom: 1px;
+}
+
+.control-arrow {
+	color: #000;
+	margin-top: 15px;
+}
+
+.fa-arrow-right {
+	float: right;
+	margin-right: 10px;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #fff;
+	position: relative;
+	top: 90px;
+}
+
+p.text-und-images {
+	line-height: 25px;
+	font-family: sans-serif;
+	color: #8b979e;
+	word-wrap: break-word;
+	margin-top: 30px;
+}
+
+.screenshots {
+	width: 400px;
+	height: 250px;
+	float: left;
+	padding-right: 10px;
+}
+
+.fa-arrow-left {
+	float: left;
+	margin-left: 10px;
+}
+
+.control {
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+}
+
+.bc {
+	background-image: url("../images/back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.games-block {
+	width: 350px;
+	height: 400px;
+	background-color: #F3F3F3;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.games-rate {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.payment-systems {
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.payment-systems {
+    background-image: url("../images/sprite-payment-systems.png")
+}
+
+.payment-systems.icon-payment-1 {
+    background-position: -414px -237px;
+    height: 18px;
+    width: 57px
+}
+
+.payment-systems.icon-payment-10 {
+    background-position: -122px -183px;
+    height: 28px;
+    width: 87px
+}
+
+.payment-systems.icon-payment-11 {
+    background-position: -241px -277px;
+    height: 21px;
+    width: 78px
+}
+
+.payment-systems.icon-payment-13 {
+    background-position: -414px -97px;
+    height: 34px;
+    width: 45px
+}
+
+.payment-systems.icon-payment-17 {
+    background-position: -348px -150px;
+    height: 30px;
+    width: 57px
+}
+
+.payment-systems.icon-payment-19 {
+    background-position: -216px -250px;
+    height: 12px;
+    width: 79px
+}
+
+.payment-systems.icon-payment-2 {
+    background-position: 0 -110px;
+    height: 33px;
+    width: 123px
+}
+
+.payment-systems.icon-payment-3 {
+    background-position: -149px -98px;
+    height: 33px;
+    width: 68px
+}
+
+.payment-systems.icon-payment-32 {
+    background-position: 0 -183px;
+    height: 30px;
+    width: 117px
+}
+
+.payment-systems.icon-payment-33 {
+    background-position: -149px -49px;
+    height: 44px;
+    width: 85px
+}
+
+.payment-systems.icon-payment-36 {
+    background-position: 0 -218px;
+    height: 27px;
+    width: 113px
+}
+
+.payment-systems.icon-payment-43 {
+    background-position: -239px -189px;
+    height: 17px;
+    width: 100px
+}
+
+.payment-systems.icon-payment-5 {
+    background-position: -239px -74px;
+    height: 35px;
+    width: 94px
+}
+
+.payment-systems.icon-payment-6 {
+    background-position: -348px 0;
+    height: 32px;
+    width: 61px
+}
+
+.payment-systems.icon-payment-7 {
+    background-position: -166px -277px;
+    height: 27px;
+    width: 70px
+}
+
+.payment-systems.icon-payment-8 {
+    background-position: -239px 0;
+    height: 32px;
+    width: 104px
+}
+
+.payment-systems.icon-payment-1:hover {
+    background-position: -414px -214px;
+    height: 18px;
+    width: 57px
+}
+
+.payment-systems.icon-payment-10:hover {
+    background-position: 0 -277px;
+    height: 27px;
+    width: 86px
+}
+
+.payment-systems.icon-payment-11:hover {
+    background-position: -235px -309px;
+    height: 21px;
+    width: 78px
+}
+
+.payment-systems.icon-payment-13:hover {
+    background-position: -414px -58px;
+    height: 34px;
+    width: 45px
+}
+
+.payment-systems.icon-payment-17:hover {
+    background-position: -348px -185px;
+    height: 30px;
+    width: 57px
+}
+
+.payment-systems.icon-payment-19:hover {
+    background-position: -164px -347px;
+    height: 12px;
+    width: 79px
+}
+
+.payment-systems.icon-payment-2:hover {
+    background-position: 0 -72px;
+    height: 33px;
+    width: 123px
+}
+
+.payment-systems.icon-payment-3:hover {
+    background-position: 0 -309px;
+    height: 33px;
+    width: 68px
+}
+
+.payment-systems.icon-payment-32:hover {
+    background-position: 0 -148px;
+    height: 30px;
+    width: 117px
+}
+
+.payment-systems.icon-payment-33:hover {
+    background-position: -149px 0;
+    height: 44px;
+    width: 85px
+}
+
+.payment-systems.icon-payment-36:hover {
+    background-position: -118px -218px;
+    height: 27px;
+    width: 113px
+}
+
+.payment-systems.icon-payment-43:hover {
+    background-position: -111px -250px;
+    height: 17px;
+    width: 100px
+}
+
+.payment-systems.icon-payment-5:hover {
+    background-position: -239px -114px;
+    height: 35px;
+    width: 94px
+}
+
+.payment-systems.icon-payment-6:hover {
+    background-position: -348px -37px;
+    height: 32px;
+    width: 61px
+}
+
+.payment-systems.icon-payment-7:hover {
+    background-position: -91px -277px;
+    height: 27px;
+    width: 70px
+}
+
+.payment-systems.icon-payment-8:hover {
+    background-position: -239px -37px;
+    height: 32px;
+    width: 104px
+}
+
+.payment-systems.icon-payment-mastercard:hover {
+    background-position: -348px -74px;
+    height: 33px;
+    width: 56px
+}
+
+.payment-systems.icon-payment-mastercard {
+    background-position: -348px -112px;
+    height: 33px;
+    width: 56px
+}
+
+.partners.icon-partner-studio-canal:hover {
+    background-position: -146px 0;
+    height: 28px;
+    width: 166px
+}
+
+.partners.icon-partner-studio-canal {
+    background-position: -146px -33px;
+    height: 28px;
+    width: 166px
+}

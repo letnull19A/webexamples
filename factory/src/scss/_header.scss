@@ -1,0 +1,44 @@
+@import './mixins/_flex.scss';
+
+header.header {
+   width: 100%;
+   height: $header_height;
+   position: fixed;
+   z-index: 999;
+}
+
+.header__content {
+   height: $header_height;
+   @include flex-row();
+   @include align-vertical-center();
+   @include justify-space-between();
+}
+
+.header__content__logo {
+   width: 172px;
+   height: 30px;
+}
+
+.header__content__menu {
+   height: auto;
+   width: 35%;
+}
+
+.header__content__menu__list {
+   @include flex-row();
+   width: 100%;
+   @include justify-space-between();
+   list-style: none;
+}
+
+.header__content__manipulation {
+   width: 170px;
+}
+
+.header__content__menu__list__list-item {
+
+}
+
+.header__content__manipulation {
+
+}

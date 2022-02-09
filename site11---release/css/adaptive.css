@@ -1,0 +1,88 @@
+@media screen and (max-width: 1200px) {
+	
+}
+
+@media screen and (max-width: 890px) {
+	.mobile-disable {
+		display: none;
+	}
+	.mobile-enable {
+		display: block;
+	}
+	.container { 
+		margin-left: 0;
+		width: 100%;
+	} 
+	.block-right {
+		margin-right: 10%;
+	}
+	.flash-player-game {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	p.kapital {
+		font-size: 40px;
+	}
+	.cards {
+		width: 100%;
+	}
+	.cards .card {
+	    margin: 0 auto;
+	    width: 294px;
+	    height: 170px;
+	}
+	a.soc {
+		display: none;
+	}
+	.lang {
+		margin-left: 40%;
+		display: flex;
+		flex-direction: row;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	p.kapital {
+		font-size: 25px;
+	}
+	.game {
+		display: none;
+	}
+	.list-gm {
+		width: 100%;
+	}
+	li.block-list {
+		width: 100%;
+	}
+	ul.list-in {
+		margin-top: 2px;
+		width: 100%;
+		height: 90%;
+	}
+	.blockListItems {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.must-registration {
+	    display: flex;
+	    flex-direction: column;
+	    margin-top: 30px;
+	    height: auto;
+	}
+	article.text-a {
+	    font-family: 'Special Elite', cursive;
+	    color: #3d3d3d;
+	    font-size: 37px;
+	    width: 100%;
+	    text-align: center;
+	}
+	.buttons {
+	    display: block;
+	    width: 100%;
+	}
+}

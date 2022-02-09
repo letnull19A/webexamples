@@ -1,3 +1,20 @@
+mixin listItem(name)
+   li(class="header__content__menu__list__list-item")
+      a(href="#")= name
+
 header(class="header")
    div(class="container")
       div(class="header__content")
+         div(class="header__content__logo")
+            img(src="./../../images/logo-0.svg")
+         div(class="header__content__menu")
+            ul(class="header__content__menu__list")
+               each item in ['overview', 'features', 'technology', 'contact', 'sign up']
+                  + listItem(item)
+         div(class="header__content__manipulation")
+            ul(class="header__content__menu__list")
+               li(class="header__content__menu__list__list-item")
+                  select(class="header__content__menu__list__list-item__select")
+                     option() en
+               li(class="header__content__menu__list__list-item")
+                  a(class="header__content__menu__list__list-item__border-button" href="#") login
